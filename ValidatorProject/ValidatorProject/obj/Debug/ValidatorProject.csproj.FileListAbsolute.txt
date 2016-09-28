@@ -21,3 +21,6 @@ c:\users\aleksandra\documents\visual studio 2015\Projects\ValidatorProject\Valid
 c:\users\aleksandra\documents\visual studio 2015\Projects\ValidatorProject\ValidatorProject\bin\Debug\NUnit3.TestAdapter.dll
 c:\users\aleksandra\documents\visual studio 2015\Projects\ValidatorProject\ValidatorProject\bin\Debug\nunit.framework.xml
 c:\users\aleksandra\documents\visual studio 2015\Projects\ValidatorProject\ValidatorProject\obj\Debug\ValidatorProject.csprojResolveAssemblyReference.cache
+C:\Users\Aleksandra\Documents\GIT Aleksandra\ValidatorProject\ValidatorProject\ValidatorProject\bin\Debug\ValidatorProject.exe.config
+C:\Users\Aleksandra\Documents\GIT Aleksandra\ValidatorProject\ValidatorProject\ValidatorProject\obj\Debug\ValidatorProject.exe
+C:\Users\Aleksandra\Documents\GIT Aleksandra\ValidatorProject\ValidatorProject\ValidatorProject\obj\Debug\ValidatorProject.pdb
