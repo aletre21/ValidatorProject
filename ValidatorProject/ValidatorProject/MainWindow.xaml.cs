@@ -54,8 +54,7 @@ namespace ValidatorProject
         private void buttonPassword_Click(object sender, RoutedEventArgs e)
         {
             PasswordValidator p = new PasswordValidator().SetPasswordLength(0).CapitalLetter(false).Number(true).SpecialSign(true);
-            p.Password = PasswordText.Text;
-
+            p.Password = PasswordText.Text; // haslo w textbox ? wtf. 
             if(p.CheckPassword())
             {
                 PasswordInfo.Content = "This password is valid";
