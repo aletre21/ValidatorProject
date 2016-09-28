@@ -14,6 +14,6 @@ namespace ValidatorProject
         bool HasRightLetters { get; set; }
         bool CheckLogin();
 
-
+        // wut
     }
 }
