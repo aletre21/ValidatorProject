@@ -7,16 +7,16 @@ using System.Threading.Tasks;
 
 namespace ValidatorProject
 {
-    [TestFixture]
+    [TestFixture] // instancjonujesz login validatora w kazdym tescie, a mozesz raz w testFixureSetUp
     public class LoginValidatorTests
     {
         [TestCase("adamnowakA", false)]
-        [TestCase("adam@now.com", true)]
+        [TestCase("adam@now.com", true)] // fajne :)
         [TestCase("adamno@wakA", false)]
         [TestCase("ada.mnowakA", false)]
         public void Login_is_valid(string login, bool expected)
         {
-            LoginValidator l = new LoginValidator();
+            LoginValidator l = new LoginValidator(); // l nic nie mowi
             l.Login = login;
 
             Assert.AreEqual(l.CheckLogin(), expected);

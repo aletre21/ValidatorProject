@@ -23,7 +23,6 @@
                  Margin="330,142,0,0"
                  HorizontalAlignment="Left"
                  VerticalAlignment="Top"
-                 Text=""
                  TextWrapping="Wrap" />
         <Button x:Name="buttonLogin"
                 Width="75"
@@ -66,5 +65,6 @@
                HorizontalAlignment="Left"
                VerticalAlignment="Top"
                Content="" />
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="391,165,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

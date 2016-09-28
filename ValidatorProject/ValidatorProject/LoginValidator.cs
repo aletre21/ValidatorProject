@@ -4,18 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-
+// to samo
 namespace ValidatorProject
 {
-
+    // wtf
 
 
     public class LoginValidator : ILoginValidator
     {
 
-        public int LoginLength { get; set; }
-        public bool HasRightLetters { get; set; }
-        public string Login { get; set; }
+        public int LoginLength { get; set; }// to samo
+        public bool HasRightLetters { get; set; } // 
+        public string Login { get; set; } // przekazywane do metody
 
         public LoginValidator()
         {
@@ -24,25 +24,25 @@ namespace ValidatorProject
         }
 
 
-        public LoginValidator SetLoginLength(int length)
+        public LoginValidator SetLoginLength(int length) // lenght dla emaila do wywalenia
         {
-            if (length >= 6)
+            if (length >= 6) // ustawiając mniej niż 6 , uzytkownik twojej klasy zdziwi sie ze nie dziala
                 LoginLength = length;
             else
                 LoginLength = 6;
             return this;
-        }
+        }// przerwa
         public LoginValidator CheckLetters(bool letters)
         {
             HasRightLetters = letters;
             return this;
         }
 
-        public bool CheckLength()
+        public bool CheckLength() // jedna metoda sprawdzajaca czy mail jest prawidlowy np. Validate
         {
             try
             {
-                if (Login.Length >= LoginLength && Login.Length >= 5)
+                if (Login.Length >= LoginLength && Login.Length >= 5) // try catch ? co sie moze wywalic tu ?
                 {
                     return true;
                 }
@@ -57,7 +57,7 @@ namespace ValidatorProject
 
         public bool CheckLetters()
         {
-            try
+            try // try catch nie potrzebny
             {
                 if (HasRightLetters)
                 {

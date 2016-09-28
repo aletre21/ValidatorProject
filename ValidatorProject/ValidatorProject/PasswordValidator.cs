@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-
+// to samo
 namespace ValidatorProject
 {
     public class PasswordValidator : IPasswordValidator
     {
-        public int PasswordLength { get; set; }
+        public int PasswordLength { get; set; } // przerwy
         public bool HasCapitalLetter { get; set; }
         public bool HasSpecialSign { get; set; }
         public bool HasNumber { get; set; }
@@ -22,7 +22,6 @@ namespace ValidatorProject
             HasSpecialSign = true;
             HasNumber = true;
     }
-
         public PasswordValidator SetPasswordLength(int length)
         {   if (length >= 8)
                 this.PasswordLength = length;
@@ -33,23 +32,23 @@ namespace ValidatorProject
 
         public PasswordValidator CapitalLetter(bool capitalLetter)
         {
-            this.HasCapitalLetter = capitalLetter;
+            this.HasCapitalLetter = capitalLetter; // this nie potrzebne
             return this;
         }
 
         public PasswordValidator Number(bool number)
         {
-            this.HasNumber = number;
+            this.HasNumber = number;  // this nie potrzebne
             return this;
         }
 
         public PasswordValidator SpecialSign(bool specialSign)
         {
-            this.HasSpecialSign = specialSign;
+            this.HasSpecialSign = specialSign;  // this nie potrzebne
             return this;
         }
 
-        public bool CheckCapitalLetter()
+        public bool CheckCapitalLetter() // jedna metoda do sprawdzenia Validate.
         {
             try
             {
@@ -94,7 +93,7 @@ namespace ValidatorProject
             {
                 if (HasNumber) {
 
-                    if (Password.Any(c => char.IsDigit(c)))
+                    if (Password.Any(c => char.IsDigit(c))) // linq git
                         return true;
 
                     else
@@ -118,7 +117,7 @@ namespace ValidatorProject
 
                 if (HasSpecialSign)
                 {
-                    if (Password.Any(c => !char.IsLetterOrDigit(c)))
+                    if (Password.Any(c => !char.IsLetterOrDigit(c))) // fajne linq
                         return true;
                     else return false;
                 }
@@ -127,7 +126,7 @@ namespace ValidatorProject
 
             }
 
-
+            // wut 
             catch (Exception ex)
             {
                 return false;
