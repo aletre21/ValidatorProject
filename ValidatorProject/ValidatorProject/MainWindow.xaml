@@ -1,0 +1,70 @@
+﻿<Window x:Class="ValidatorProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:ValidatorProject"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Title="MainWindow"
+        Width="525"
+        Height="350"
+        mc:Ignorable="d">
+    <Grid>
+        <TextBox x:Name="LoginText"
+                 Width="120"
+                 Height="23"
+                 Margin="80,142,0,0"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Top"
+                 Text=""
+                 TextWrapping="Wrap" />
+        <TextBox x:Name="PasswordText"
+                 Width="120"
+                 Height="23"
+                 Margin="330,142,0,0"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Top"
+                 Text=""
+                 TextWrapping="Wrap" />
+        <Button x:Name="buttonLogin"
+                Width="75"
+                Margin="105,195,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Click="buttonLogin_Click"
+                Content="Check" />
+        <Button x:Name="buttonPassword"
+                Width="75"
+                Margin="355,195,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Click="buttonPassword_Click"
+                Content="Check" />
+
+
+
+        <Label x:Name="PasswordInfo"
+               Width="205"
+               Height="56"
+               Margin="285,39,0,0"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               Content="" />
+        <Label x:Name="Login"
+               Margin="37,139,0,0"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               Content="Login" />
+        <Label x:Name="Password"
+               Margin="265,139,0,0"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               Content="Password" />
+        <Label x:Name="LoginInfo"
+               Width="145"
+               Height="56"
+               Margin="70,39,0,0"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               Content="" />
+    </Grid>
+</Window>
