@@ -24,3 +24,6 @@ c:\users\aleksandra\documents\visual studio 2015\Projects\ValidatorProject\Valid
 C:\Users\Aleksandra\Documents\GIT Aleksandra\ValidatorProject\ValidatorProject\ValidatorProject\bin\Debug\ValidatorProject.exe.config
 C:\Users\Aleksandra\Documents\GIT Aleksandra\ValidatorProject\ValidatorProject\ValidatorProject\obj\Debug\ValidatorProject.exe
 C:\Users\Aleksandra\Documents\GIT Aleksandra\ValidatorProject\ValidatorProject\ValidatorProject\obj\Debug\ValidatorProject.pdb
+C:\Users\Aleksandra\Documents\ValidatorProject\ValidatorProject\ValidatorProject\bin\Debug\ValidatorProject.exe.config
+C:\Users\Aleksandra\Documents\ValidatorProject\ValidatorProject\ValidatorProject\obj\Debug\ValidatorProject.exe
+C:\Users\Aleksandra\Documents\ValidatorProject\ValidatorProject\ValidatorProject\obj\Debug\ValidatorProject.pdb

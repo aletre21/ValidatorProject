@@ -32,7 +32,11 @@ namespace ValidatorProject
                 LoginLength = 6;
             return this;
         }
-        public LoginValidator CheckLetters(bool letters) { HasRightLetters = letters; return this; }
+        public LoginValidator CheckLetters(bool letters)
+        {
+            HasRightLetters = letters;
+            return this;
+        }
 
         public bool CheckLength()
         {
