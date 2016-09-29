@@ -17,14 +17,12 @@
                  VerticalAlignment="Top"
                  Text=""
                  TextWrapping="Wrap" />
-        <TextBox x:Name="PasswordText"
-                 Width="120"
-                 Height="23"
-                 Margin="330,142,0,0"
-                 HorizontalAlignment="Left"
-                 VerticalAlignment="Top"
-                 Text=""
-                 TextWrapping="Wrap" />
+        <PasswordBox x:Name="PasswordText"
+                     Width="120"
+                     Height="23"
+                     Margin="330,142,0,0"
+                     HorizontalAlignment="Left"
+                     VerticalAlignment="Top" />
         <Button x:Name="buttonLogin"
                 Width="75"
                 Margin="105,195,0,0"
@@ -43,12 +41,13 @@
 
 
         <Label x:Name="PasswordInfo"
-               Width="205"
-               Height="56"
-               Margin="285,39,0,0"
-               HorizontalAlignment="Left"
-               VerticalAlignment="Top"
-               Content="" />
+                  Width="205"
+                  Height="95"
+                  Margin="285,39,0,0"
+                  HorizontalAlignment="Left"
+                  VerticalAlignment="Top">
+            
+        </Label>
         <Label x:Name="Login"
                Margin="37,139,0,0"
                HorizontalAlignment="Left"
@@ -61,10 +60,17 @@
                Content="Password" />
         <Label x:Name="LoginInfo"
                Width="145"
-               Height="56"
+               Height="95"
                Margin="70,39,0,0"
                HorizontalAlignment="Left"
+               VerticalAlignment="Top" />
+        <Label x:Name="PassswordLabel"
+               Width="90"
+               Height="35"
+               Margin="342,83,0,0"
+               HorizontalAlignment="Left"
                VerticalAlignment="Top"
-               Content="" />
+               Content=""
+               RenderTransformOrigin="-0.395,0.192" />
     </Grid>
 </Window>
