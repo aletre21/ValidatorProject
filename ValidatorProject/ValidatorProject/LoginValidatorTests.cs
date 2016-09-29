@@ -13,7 +13,6 @@ namespace ValidatorProject
         {
             LoginValidator Login = new LoginValidator();
             Assert.AreEqual(Login.CheckLogin(login), expected);
-
         }
     }
 }

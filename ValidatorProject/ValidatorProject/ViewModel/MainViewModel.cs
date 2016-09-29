@@ -5,7 +5,9 @@ using System.Windows.Input;
 
 namespace ValidatorProject.ViewModel
 {
-    
+    /// <summary>
+    /// Connect model with view
+    /// </summary>  
     public class MainViewModel : ViewModelBase
     {        
         LoginValidator LoginValidator;
@@ -13,8 +15,8 @@ namespace ValidatorProject.ViewModel
         
         public MainViewModel()
         {
-            this.LoginValidator = new LoginValidator();
-            this.PasswordValidator = new PasswordValidator().SetPasswordLength(0).CapitalLetter(false).Number(true).SpecialSign(true);
+            LoginValidator = new LoginValidator();
+            PasswordValidator = new PasswordValidator().SetPasswordLength(0).CapitalLetter(false).Number(true).SpecialSign(true);
         }
 
         private string isLoginValid;

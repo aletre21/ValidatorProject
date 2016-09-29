@@ -1,14 +1,10 @@
-
-using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Ioc;
 using Microsoft.Practices.ServiceLocation;
 
 namespace ValidatorProject.ViewModel
 {
-   
     public class ViewModelLocator
     {
-       
         public ViewModelLocator()
         {
             ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);

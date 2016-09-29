@@ -2,7 +2,9 @@
 using System.Linq;
 
 namespace ValidatorProject
-{
+{   /// <summary>
+    /// Check if the password is valid by using defined rules
+    /// </summary>
     public class PasswordValidator : IPasswordValidator
     {
         private int PasswordLength;
@@ -23,7 +25,9 @@ namespace ValidatorProject
             HasNumber = true;
             PasswordErrorList = new List<string>();
         }
-
+        ///<summary>
+        ///This value must be greater than or equal to 8
+        ///</summary
         public PasswordValidator SetPasswordLength(int length)
         {
             if (length >= 8)
