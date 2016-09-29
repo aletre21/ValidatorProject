@@ -15,7 +15,7 @@ namespace ValidatorProject
         [TestCase("", false)]
         public void Password_length_default (string pass, bool expected)
         {
-            PasswordV Password = new PasswordV();
+            PasswordValidator Password = new PasswordValidator();
             Assert.AreEqual(expected, Password.CheckPassword(pass));
         }
 
@@ -24,7 +24,7 @@ namespace ValidatorProject
         [TestCase("",0, false)]
         public void Password_length_custom(string pass, int length, bool expected)
         {
-            PasswordV Password = new PasswordV().SetPasswordLength(length);
+            PasswordValidator Password = new PasswordValidator().SetPasswordLength(length);
             Assert.AreEqual(expected, Password.CheckPassword(pass));
         }
 
@@ -35,7 +35,7 @@ namespace ValidatorProject
         [TestCase("adamnowakA", 4, true,false,false,false)]
         public void Password_mixed_conditions(string pass, int length, bool number, bool sign, bool capitalLetter, bool expected)
         {
-            PasswordV Password = new PasswordV().SetPasswordLength(length).SpecialSign(sign).Number(number).CapitalLetter(capitalLetter);
+            PasswordValidator Password = new PasswordValidator().SetPasswordLength(length).SpecialSign(sign).Number(number).CapitalLetter(capitalLetter);
             Assert.AreEqual(expected, Password.CheckPassword(pass));
         }
 

@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace ValidatorProject
 {
-    public class PasswordV : IPasswordValidator
+    public class PasswordValidator : IPasswordValidator
     {
         private int PasswordLength;
 
@@ -15,7 +15,7 @@ namespace ValidatorProject
 
         public IList<string> PasswordErrorList { get; set; }
 
-        public PasswordV()
+        public PasswordValidator()
         {
             PasswordLength = 8;
             HasCapitalLetter = true;
@@ -24,7 +24,7 @@ namespace ValidatorProject
             PasswordErrorList = new List<string>();
         }
 
-        public PasswordV SetPasswordLength(int length)
+        public PasswordValidator SetPasswordLength(int length)
         {
             if (length >= 8)
                 this.PasswordLength = length;
@@ -33,19 +33,19 @@ namespace ValidatorProject
             return this;
         }
 
-        public PasswordV CapitalLetter(bool capitalLetter)
+        public PasswordValidator CapitalLetter(bool capitalLetter)
         {
             this.HasCapitalLetter = capitalLetter;
             return this;
         }
 
-        public PasswordV Number(bool number)
+        public PasswordValidator Number(bool number)
         {
             this.HasNumber = number;
             return this;
         }
 
-        public PasswordV SpecialSign(bool specialSign)
+        public PasswordValidator SpecialSign(bool specialSign)
         {
             this.HasSpecialSign = specialSign;
             return this;
@@ -115,6 +115,7 @@ namespace ValidatorProject
 
         public bool CheckPassword(string password)
         {
+            PasswordErrorList.Clear();
             bool sign = CheckSpecialSign(password);
             bool length = CheckLength(password);
             bool capitalLetter = CheckCapitalLetter(password);
